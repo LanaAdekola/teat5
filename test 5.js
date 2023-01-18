@@ -11,6 +11,11 @@ if (leadsFromLocalStorage) {
     render(myLeads)
 }
 
+tabBtn.addEventListener("click", function(){
+    console.log(tabs[0].url)
+})
+
+
 function render(leads) {
     let listItems = ""
     for (let i = 0; i < leads.length; i++) {
